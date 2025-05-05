@@ -1,0 +1,191 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    font-family: cursive;
+    transition: all 0.3s ease;
+}
+
+header{
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+#mainlist{
+
+    width: 20%;
+    height: 720px;
+    background-color: rgb(14, 0, 82);
+    float: left;
+}
+
+#menu{
+
+    width: 20%;
+    height: 100px;
+    
+}
+
+#greet{
+
+    width: 80%;
+    height: 100px;
+    background-color: rgb(132, 209, 247);
+    color: rgb(52, 6, 192);
+    text-shadow: 3px 3px 5px rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.selections{
+
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to top,  blue,rgb(46, 164, 255));
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+#checkbal{
+
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to top,  rgb(19, 106, 0),rgb(108, 255, 167));
+}
+
+.selections:hover{
+
+    color: rgb(137, 120, 120);
+    background: linear-gradient(to top,  rgb(104, 125, 244),rgb(3, 0, 61));
+}
+
+header div{
+
+    width: 50%;
+    height: 100px;
+    float: left;
+    border: 1px solid black;
+}
+
+#list{
+
+    height: 50%;
+    
+}
+
+#logoutCont{
+
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#logout{
+
+    background: linear-gradient(to top,  blue,rgb(46, 164, 255));
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+}
+
+#logout:hover{
+
+    color: black;
+    background: linear-gradient(to top,  rgb(255, 0, 0),rgb(255, 118, 118));
+}
+
+.content{
+
+    width: 80%;
+    height: 720px;
+    color: rgb(41, 79, 111);
+    background-color: rgba(104, 99, 255, 0.392);
+    float: right;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo{
+
+    background-image: url(../bank.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0.424);
+    color: rgb(0, 13, 82);
+}
+
+button{
+
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: aqua;
+    color: rgb(46, 33, 33);
+}
+
+
+@media (max-width: 780px) {
+    
+    #menu{
+
+        display: none;
+    }
+
+    #greet{
+
+        width: 100%;
+    }
+
+    #greet h1{
+
+        font-size: 28px;
+    }
+
+    #mainlist{
+
+        width: 30%;
+    }
+
+    .content{
+
+        width: 70%;
+    }
+
+    .content h1{
+
+        font-size: 30px;
+        height: 160px;
+    }
+
+    .selections, #logout{
+
+        font-size: 10px;
+    }
+
+
+}
